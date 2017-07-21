@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Inventory</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="bower_components\bootstrap\dist\css\bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
+    <link rel="stylesheet" href="css\styles.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Fresca|Lobster" rel="stylesheet">
+
+    <script src="bower_components\jquery\dist\jquery.min.js"></script>
+    <script src="javascript\script.js" charset="utf-8"></script>
+    <script src="bower_components\bootstrap\dist\js\bootstrap.min.js" type="text/javascript"></script>
+</head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="inventory.html">Inventory</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <h2 id='head1'>Our 2018 Vehicle Models</h2>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for a car.." title="Type in a name">
+    <input type="text" id="price" name="Price" placeholder="Type in price of car..">
+    <br>
+    Total Value: &dollar; <span id="result"></span>
+
+    <table id="myTable">
+      <tr class="header">
+        <th style="width:30%;">Name</th>
+        <th style="width:40%;">Vehicles</th>
+        <th style="width:30%;">Price</th>
+      </tr>
+      <tr>
+        <td id='carName'>Tesla Model S</td>
+        <td><img src="http://buyersguide.caranddriver.com/media/assets/submodel/7651.jpg"
+          width=500 height=350></img></td>
+        <td id='cost'>$35000</td>
+      </tr>
+      <tr>
+        <td id='carName'>Toyota GT86</td>
+        <td><img src="https://carpriceupdates.files.wordpress.com/2016/09/2018-toyota-gt86.png?w=1007"
+          width=500 height=350></img></td>
+          <td id='cost'>$20000</td>
+      </tr>
+      <tr>
+        <td id='carName'>Nissan GTR</td>
+        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr82n8do7_a84JNZsVCUShRlBkMDIFFkTXFwD_E49hOoMcqAVx"
+          width=500 height=350></img></td>
+          <td id='cost'>$125000</td>
+      </tr>
+      <tr>
+        <td id='carName'>Acura NSX</td>
+        <td><img src="http://wpmedia.driving.ca/2017/05/chrome-image-386339.png?w=800&h=520&crop=1&quality=70&strip=all"
+          width=500 height=350></img></td>
+          <td id='cost'>$189000</td>
+      </tr>
+      <tr>
+        <td id='carName'>BMW i8</td>
+        <td><img src="http://wpmedia.driving.ca/2017/02/chrome-image-387048.png?w=800&h=520&crop=1&quality=70&strip=all"
+          width=500 height=350></img></td>
+          <td id='cost'>$149800</td>
+      </tr>
+    </table>
+
+    <footer class="w3-container w3-teal">
+      <p>Our address is <address>9000 Powerlevel Ave, Saiyan City: EARTH</address></p>
+    </footer>
+
+  </body>
+</html>
